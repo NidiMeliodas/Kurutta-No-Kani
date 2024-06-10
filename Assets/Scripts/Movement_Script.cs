@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement_Script : MonoBehaviour
 {
-    public float speed ; // Vitesse de déplacement du joueur
-    public float jump ; // Force de saut
+    public float speed = 2f; // Vitesse de déplacement du joueur
+    public float jump = 75f; // Force de saut
 
     private float Move; // Variable pour stocker l'entrée horizontale
 
@@ -47,7 +48,7 @@ public class Movement_Script : MonoBehaviour
         // Vérifier si l'objet en collision a le tag "Level"
         if (other.gameObject.CompareTag("Level"))
         {
-            // Le joueur touche quelque chose avec son corps
+            isJumping = false; // Le joueur n'est plus en train de sauter (pieds touchent le sol)
         }
     }
 
@@ -57,27 +58,24 @@ public class Movement_Script : MonoBehaviour
         // Vérifier si l'objet en collision a le tag "Level"
         if (other.gameObject.CompareTag("Level"))
         {
-            // Le joueur ne touche plus quelque chose avec son corps
-        }
-    }
-
-    // Cette méthode est appelée lorsqu'un autre collider entre dans le trigger (BoxCollider2D aux pieds)
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Vérifier si l'objet en collision a le tag "Level"
-        if (other.CompareTag("Level"))
-        {
-            isJumping = false; // Le joueur n'est plus en train de sauter (pieds touchent le sol)
-        }
-    }
-
-    // Cette méthode est appelée lorsqu'un autre collider sort du trigger (BoxCollider2D aux pieds)
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        // Vérifier si l'objet en collision a le tag "Level"
-        if (other.CompareTag("Level"))
-        {
             isJumping = true; // Le joueur est de nouveau en train de sauter (pieds quittent le sol)
         }
+    }
+
+    // Cette méthode est appelée lorsqu'un autre collider entre dans le trigger (BoxCollider2D aux pieds ou CapsuleCollider2D)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Vérifier si l'objet en collision a le tag "Killzone"
+        if (other.CompareTag("Killzone"))
+        {
+            RestartLevel(); // Réinitialiser le niveau
+        }
+    }
+
+    // Fonction pour réinitialiser le niveau en rechargeant la scène
+    void RestartLevel()
+    {
+        // Recharger la scène actuelle
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
