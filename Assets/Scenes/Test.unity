@@ -13191,7 +13191,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1491530054}
   - component: {fileID: 1491530053}
-  - component: {fileID: 1491530052}
   m_Layer: 0
   m_Name: Killzone
   m_TagString: Killzone
@@ -13199,19 +13198,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1491530052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491530051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85e38a248476d844b8f40d0569451cdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 0}
 --- !u!61 &1491530053
 BoxCollider2D:
   m_ObjectHideFlags: 0
