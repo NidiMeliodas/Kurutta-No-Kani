@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class surikencontrol : MonoBehaviour
 {
-    public GameObject point A;
-    public GameObject point B;
+    public GameObject point Ak;
+    public GameObject point Bk;
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
@@ -14,7 +14,7 @@ public class surikencontrol : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        currentPoint = pointB.transform;
+        currentPoint = pointBk.transform;
         anim.SetBool('isMoving', true);
     }
 
@@ -22,7 +22,7 @@ public class surikencontrol : MonoBehaviour
     void Update()
     {
         Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == pointB.transform)
+        if(currentPoint == pointBk.transform)
         {
             rb.velocity == new Vector2(speed, 0);
         }

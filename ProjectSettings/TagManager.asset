@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Level
-  - 'player '
-  - deco
-<<<<<<< Updated upstream
-=======
-  - Killzone
-  - Domage
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,13 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-<<<<<<< Updated upstream
   - 
   - 
-=======
-  - Level
-  - Domage
->>>>>>> Stashed changes
   - 
   - 
   - 
@@ -53,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Level
-    uniqueID: 2833496803
-    locked: 0
-  - name: Decoration
-    uniqueID: 2692448457
-    locked: 0
-  - name: Foreground
-    uniqueID: 1843879263
     locked: 0
