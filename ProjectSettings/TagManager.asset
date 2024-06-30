@@ -7,6 +7,11 @@ TagManager:
   - Level
   - 'player '
   - deco
+<<<<<<< Updated upstream
+=======
+  - Killzone
+  - Domage
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -14,8 +19,13 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< Updated upstream
   - 
   - 
+=======
+  - Level
+  - Domage
+>>>>>>> Stashed changes
   - 
   - 
   - 
@@ -49,4 +59,7 @@ TagManager:
     locked: 0
   - name: Decoration
     uniqueID: 2692448457
+    locked: 0
+  - name: Foreground
+    uniqueID: 1843879263
     locked: 0
