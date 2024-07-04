@@ -25,6 +25,8 @@ public class Script_Mouvement : MonoBehaviour
     public float castHorizontalOffset;
     public LayerMask LevelLayer;
 
+    public CoinManager CM;
+
     // Initialisation
     void Start()
     {
@@ -102,12 +104,20 @@ public class Script_Mouvement : MonoBehaviour
         {
             RestartLevel();
         }
+
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            CM.Coin_Count++;
+        }
     }
 
     void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    
 
     // private void OnCollisionEnter2D(Collision2D other)
     // {

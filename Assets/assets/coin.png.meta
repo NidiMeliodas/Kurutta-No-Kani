@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47ba5e0ba0e420843b0fbeb913cea5bb
+guid: b0002cd08c970164697142461b4240a0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spear_0
+      name: coin_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dec4356f750efb4459b871efe26e4493
-      internalID: -1022950119
+      spriteID: 3e16450ba0ea00c4ba96c03880d39753
+      internalID: 1113927314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_1
+      name: coin_1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0db7a3e2045e59a4f971cfde39c30698
-      internalID: -952608560
+      spriteID: 1ed78c2e8fd88704a84e3ae93d231edd
+      internalID: 1985750796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_2
+      name: coin_2
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c46787d48014b04db6f45d80d3f1e35
-      internalID: 1916262501
+      spriteID: 30a185569c60ada449e8c4d6ab5cffb9
+      internalID: 1748329120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_3
+      name: coin_3
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64371d83ea43b4648bfd3b1b18a77c29
-      internalID: 1982289593
+      spriteID: 885eeacf0f5c4e74292ae5c9b4367977
+      internalID: 622376937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_4
+      name: coin_4
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f854a95f58e5d34439593a5ba263c0ed
-      internalID: 1414588371
+      spriteID: 627fac8fed8efe84db01c83a662b6c7e
+      internalID: -1322985841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_5
+      name: coin_5
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1988066a13019114584beaa77add7773
-      internalID: -259586814
+      spriteID: c773278bbeced7c40b166d14092d4908
+      internalID: 1847194335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_6
+      name: coin_6
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5e60b54a6838f4c8c00d165984f53d
-      internalID: -153405114
+      spriteID: a5536a611530cf74881e4c59ee331132
+      internalID: 2123743565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_7
+      name: coin_7
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 407110c7fc917c24cb2f56b67d4fbff3
-      internalID: -1727280400
+      spriteID: b044a46ee9c2c3e429262dfebe31608e
+      internalID: -898124184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_8
+      name: coin_8
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd43b38ca5ae3594d9e9f8d367c8a11b
-      internalID: 1915994906
+      spriteID: c74f5facbc8fbcc408ca595a7bad8528
+      internalID: 363276840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_9
+      name: coin_9
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c6314feaef1814eaf798410b3f7f51
-      internalID: 1664044910
+      spriteID: 9086815c7e0de374cb9ab32d243ea041
+      internalID: 151819548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_10
+      name: coin_10
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 710053f0f1961ba4abea90bdcb0e0f90
-      internalID: -677683014
+      spriteID: f2b6b90c42016d04eba00317643cf0b8
+      internalID: 1350293799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_11
+      name: coin_11
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 64
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c1fc2419c2aeb42b4f681bd98b544c
-      internalID: 409280133
+      spriteID: 1fc862fb161866347aa8702f3ff65f9e
+      internalID: -1108454020
       vertices: []
       indices: 
       edges: []
@@ -372,18 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spear_0: -1022950119
-      Spear_1: -952608560
-      Spear_10: -677683014
-      Spear_11: 409280133
-      Spear_2: 1916262501
-      Spear_3: 1982289593
-      Spear_4: 1414588371
-      Spear_5: -259586814
-      Spear_6: -153405114
-      Spear_7: -1727280400
-      Spear_8: 1915994906
-      Spear_9: 1664044910
+      coin_0: 1113927314
+      coin_1: 1985750796
+      coin_10: 1350293799
+      coin_11: -1108454020
+      coin_2: 1748329120
+      coin_3: 622376937
+      coin_4: -1322985841
+      coin_5: 1847194335
+      coin_6: 2123743565
+      coin_7: -898124184
+      coin_8: 363276840
+      coin_9: 151819548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

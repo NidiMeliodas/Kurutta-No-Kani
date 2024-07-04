@@ -8,6 +8,7 @@ TagManager:
   - 'player '
   - deco
   - Killzone
+  - Coin
   layers:
   - Default
   - TransparentFX

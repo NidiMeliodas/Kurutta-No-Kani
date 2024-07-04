@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47ba5e0ba0e420843b0fbeb913cea5bb
+guid: d5bf61f8a97b94048a5aa1e53a4b7cd2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spear_0
+      name: Spike_B_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dec4356f750efb4459b871efe26e4493
-      internalID: -1022950119
+      spriteID: a6feb56d7535b8c4db8ed3fcdeadfeff
+      internalID: -1186748943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db7a3e2045e59a4f971cfde39c30698
-      internalID: -952608560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spear_2
+      name: Spike_B_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,41 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c46787d48014b04db6f45d80d3f1e35
-      internalID: 1916262501
+      spriteID: b5c5672f83bc2b04ca7dba651698e618
+      internalID: 2011521802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64371d83ea43b4648bfd3b1b18a77c29
-      internalID: 1982289593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spear_4
+      name: Spike_B_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,41 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f854a95f58e5d34439593a5ba263c0ed
-      internalID: 1414588371
+      spriteID: 7a1dceaaa1a00c041ad1890a293e7513
+      internalID: -1377483186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1988066a13019114584beaa77add7773
-      internalID: -259586814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spear_6
+      name: Spike_B_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,41 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5e60b54a6838f4c8c00d165984f53d
-      internalID: -153405114
+      spriteID: 10b9a594a89a5184098dda4492cd9802
+      internalID: 892007270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 407110c7fc917c24cb2f56b67d4fbff3
-      internalID: -1727280400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spear_8
+      name: Spike_B_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,41 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd43b38ca5ae3594d9e9f8d367c8a11b
-      internalID: 1915994906
+      spriteID: 3e8fda362697e574ea56be7d1eec99b7
+      internalID: 1034861986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_9
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4c6314feaef1814eaf798410b3f7f51
-      internalID: 1664044910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spear_10
+      name: Spike_B_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 710053f0f1961ba4abea90bdcb0e0f90
-      internalID: -677683014
+      spriteID: 7cd9daa940c976d4fabc051d9f2b8189
+      internalID: 680888309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_11
+      name: Spike_B_6
       rect:
         serializedVersion: 2
-        x: 176
+        x: 192
         y: 0
-        width: 16
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,8 +250,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c1fc2419c2aeb42b4f681bd98b544c
-      internalID: 409280133
+      spriteID: 74e7721262ea83645839e634207bacb1
+      internalID: 1181705582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_B_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9235316f7b52e1498da9a144fcda6b2
+      internalID: -167370040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_B_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a37dbf0d8ceeb438254dcadfa023e8
+      internalID: 163866396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_B_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8de9e8012f5b044a8770f4c99093d7
+      internalID: 335295037
       vertices: []
       indices: 
       edges: []
@@ -372,18 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spear_0: -1022950119
-      Spear_1: -952608560
-      Spear_10: -677683014
-      Spear_11: 409280133
-      Spear_2: 1916262501
-      Spear_3: 1982289593
-      Spear_4: 1414588371
-      Spear_5: -259586814
-      Spear_6: -153405114
-      Spear_7: -1727280400
-      Spear_8: 1915994906
-      Spear_9: 1664044910
+      Spike_B_0: -1186748943
+      Spike_B_1: 2011521802
+      Spike_B_2: -1377483186
+      Spike_B_3: 892007270
+      Spike_B_4: 1034861986
+      Spike_B_5: 680888309
+      Spike_B_6: 1181705582
+      Spike_B_7: -167370040
+      Spike_B_8: 163866396
+      Spike_B_9: 335295037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
