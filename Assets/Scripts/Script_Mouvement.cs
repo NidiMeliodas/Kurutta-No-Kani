@@ -13,12 +13,14 @@ public class Script_Mouvement : MonoBehaviour
     private Animator anim;
 
     // Mouvement horizontal
+    [Header("Mouvement")]
     private float move;
     public float Speed;
     private bool isFacingRight;
 
     // Saut
     public float jump;
+    [Header("Floor Detection")]
 
     // Détection du sol
     public Vector2 boxSize;
@@ -26,8 +28,11 @@ public class Script_Mouvement : MonoBehaviour
     public float castHorizontalOffset;
     public LayerMask LevelLayer;
 
-    public CoinManager CM;
+    public CoinManager CoinScript;
 
+    private bool Dead;
+
+    [Header("Sounds")]
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip coinSound;
     [SerializeField] private AudioClip deathSound;
@@ -54,14 +59,13 @@ public class Script_Mouvement : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jump * 10));
         }
 
-        while (move != 0)
-        {
-            Sound_Manager.instance.PlaySound(runningSound);
-        }
+        
 
         if (move != 0)
         {
             anim.SetBool("isRunning", true);
+            Sound_Manager.instance.PlaySound(runningSound);
+
         }
         else
         {
@@ -78,6 +82,7 @@ public class Script_Mouvement : MonoBehaviour
         {
             Flip();
         }
+
     }
 
     // Inversion de direction
@@ -114,43 +119,27 @@ public class Script_Mouvement : MonoBehaviour
     {
         if (other.CompareTag("Killzone"))
         {
-            RestartLevel();
+            anim.SetBool("IsDead", true);
+            Sound_Manager.instance.PlaySound(deathSound);
+            // Destroy(gameObject);
+            StartCoroutine(RestartLevel());
+            this.enabled = false;
+            
         }
 
         if (other.gameObject.CompareTag("Coin"))
         {
             Sound_Manager.instance.PlaySound(coinSound);
             Destroy(other.gameObject);
-            CM.Coin_Count++;
+            CoinScript.Coin_Count++;
         }
     }
 
-    void RestartLevel()
+   
+    private IEnumerator RestartLevel()
     {
-        Sound_Manager.instance.PlaySound(deathSound);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    
-
-
-    // private void OnCollisionEnter2D(Collision2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Level"))
-    //     {
-    //         Vector3 normal = other.GetContact(0).normal;
-    //         if(normal == Vector3.up)
-    //         {
-    //             Grounded = true;
-    //         }
-    //     }
-    // }
-
-    // private void OnCollisionExit2D(Collision2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Level"))
-    //     {
-    //         Grounded = false;
-    //     }
-    // }
 }
