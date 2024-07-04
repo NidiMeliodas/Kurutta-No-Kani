@@ -327,6 +327,14 @@ PrefabInstance:
       propertyPath: CM
       value: 
       objectReference: {fileID: 1415316694}
+    - target: {fileID: 1198427381837964357, guid: 6028f34f5a8b15640817e8317552fef6, type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 8300000, guid: 970139a8e3b30584dbb7af8f8573bd5b, type: 3}
+    - target: {fileID: 1198427381837964357, guid: 6028f34f5a8b15640817e8317552fef6, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 47b105e1151d12e478014bedf0018d79, type: 3}
     - target: {fileID: 5640045817957865613, guid: 6028f34f5a8b15640817e8317552fef6, type: 3}
       propertyPath: m_Name
       value: Player

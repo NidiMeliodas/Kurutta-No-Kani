@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks.Sources;
 using UnityEditor;
 using UnityEngine;
@@ -27,6 +28,11 @@ public class Script_Mouvement : MonoBehaviour
 
     public CoinManager CM;
 
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip coinSound;
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip landingSound;
+    [SerializeField] private AudioClip runningSound;
     // Initialisation
     void Start()
     {
@@ -42,9 +48,15 @@ public class Script_Mouvement : MonoBehaviour
 
         rb.velocity = new Vector2(move * Speed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded())
         {
+            Sound_Manager.instance.PlaySound(jumpSound);
             rb.AddForce(new Vector2(rb.velocity.x, jump * 10));
+        }
+
+        while (move != 0)
+        {
+            Sound_Manager.instance.PlaySound(runningSound);
         }
 
         if (move != 0)
@@ -107,6 +119,7 @@ public class Script_Mouvement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coin"))
         {
+            Sound_Manager.instance.PlaySound(coinSound);
             Destroy(other.gameObject);
             CM.Coin_Count++;
         }
@@ -114,10 +127,12 @@ public class Script_Mouvement : MonoBehaviour
 
     void RestartLevel()
     {
+        Sound_Manager.instance.PlaySound(deathSound);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     
+
 
     // private void OnCollisionEnter2D(Collision2D other)
     // {
