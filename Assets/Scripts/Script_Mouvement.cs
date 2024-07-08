@@ -28,9 +28,11 @@ public class Script_Mouvement : MonoBehaviour
     public float castHorizontalOffset;
     public LayerMask LevelLayer;
 
-    public CoinManager CoinScript;
+    public CoinManager CM;
 
     private bool Dead;
+
+
 
     [Header("Sounds")]
     [SerializeField] private AudioClip jumpSound;
@@ -44,6 +46,7 @@ public class Script_Mouvement : MonoBehaviour
         isFacingRight = true;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        CM.Coin_Count = 0;
     }
 
     // Mise à jour
@@ -59,30 +62,28 @@ public class Script_Mouvement : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jump * 10));
         }
 
-        
-
-        if (move != 0)
+        if(!PauseMenu.isPaused)
         {
-            anim.SetBool("isRunning", true);
-            Sound_Manager.instance.PlaySound(runningSound);
+            if (move != 0)
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
 
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
-        }
+            anim.SetBool("isJumping", !isGrounded());
 
-        anim.SetBool("isJumping", !isGrounded());
-
-        if (!isFacingRight && move > 0)
-        {
-            Flip();
+            if (!isFacingRight && move > 0)
+            {
+                Flip();
+            }
+            else if (isFacingRight && move < 0)
+            {
+                Flip();
+            }
         }
-        else if (isFacingRight && move < 0)
-        {
-            Flip();
-        }
-
     }
 
     // Inversion de direction
@@ -131,7 +132,7 @@ public class Script_Mouvement : MonoBehaviour
         {
             Sound_Manager.instance.PlaySound(coinSound);
             Destroy(other.gameObject);
-            CoinScript.Coin_Count++;
+            CM.Coin_Count++;
         }
     }
 
