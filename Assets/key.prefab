@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027d3f5ea0078ae49ab95fafefbfb766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 970139a8e3b30584dbb7af8f8573bd5b, type: 3}
   player: {fileID: 5640045817957865613, guid: 6028f34f5a8b15640817e8317552fef6, type: 3}
   IsPickedUp: 0
   smoothTime: 0.5

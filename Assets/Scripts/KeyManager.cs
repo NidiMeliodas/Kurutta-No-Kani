@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class KeyManager : MonoBehaviour
 {
+    [SerializeField] private AudioClip keySound;
     [SerializeField] GameObject player;
 
     public bool IsPickedUp;
@@ -36,6 +37,7 @@ public class KeyManager : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && !IsPickedUp)
         {
             IsPickedUp = true;
+            Sound_Manager.instance.PlaySound(keySound);
         }
     }
 }
