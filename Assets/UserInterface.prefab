@@ -274,7 +274,6 @@ GameObject:
   - component: {fileID: 3276157372097678104}
   - component: {fileID: 6214883971960463126}
   - component: {fileID: 8675424213457909828}
-  - component: {fileID: 4537978184194748603}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -396,19 +395,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4537978184194748603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3255224334910028744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eafd6066ba446743925cdcec40fcc7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelName: Level Menu
 --- !u!1 &3976040264413202730
 GameObject:
   m_ObjectHideFlags: 0
