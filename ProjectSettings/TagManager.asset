@@ -5,9 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Level
-  - 'player '
   - deco
   - Killzone
+  - Coin
+  - Key
   layers:
   - Default
   - TransparentFX

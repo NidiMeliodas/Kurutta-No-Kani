@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks.Sources;
 using UnityEditor;
 using UnityEngine;
@@ -12,12 +13,14 @@ public class Script_Mouvement : MonoBehaviour
     private Animator anim;
 
     // Mouvement horizontal
+    [Header("Mouvement")]
     private float move;
     public float Speed;
     private bool isFacingRight;
 
     // Saut
     public float jump;
+    [Header("Floor Detection")]
 
     // Détection du sol
     public Vector2 boxSize;
@@ -25,12 +28,25 @@ public class Script_Mouvement : MonoBehaviour
     public float castHorizontalOffset;
     public LayerMask LevelLayer;
 
+    public CoinManager CM;
+
+    private bool Dead;
+
+
+
+    [Header("Sounds")]
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip coinSound;
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip landingSound;
+    [SerializeField] private AudioClip runningSound;
     // Initialisation
     void Start()
     {
         isFacingRight = true;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        CM.Coin_Count = 0;
     }
 
     // Mise à jour
@@ -40,29 +56,33 @@ public class Script_Mouvement : MonoBehaviour
 
         rb.velocity = new Vector2(move * Speed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded())
         {
+            Sound_Manager.instance.PlaySound(jumpSound);
             rb.AddForce(new Vector2(rb.velocity.x, jump * 10));
         }
 
-        if (move != 0)
+        if(!PauseMenu.isPaused)
         {
-            anim.SetBool("isRunning", true);
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
-        }
+            if (move != 0)
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
 
-        anim.SetBool("isJumping", !isGrounded());
+            anim.SetBool("isJumping", !isGrounded());
 
-        if (!isFacingRight && move > 0)
-        {
-            Flip();
-        }
-        else if (isFacingRight && move < 0)
-        {
-            Flip();
+            if (!isFacingRight && move > 0)
+            {
+                Flip();
+            }
+            else if (isFacingRight && move < 0)
+            {
+                Flip();
+            }
         }
     }
 
@@ -100,32 +120,27 @@ public class Script_Mouvement : MonoBehaviour
     {
         if (other.CompareTag("Killzone"))
         {
-            RestartLevel();
+            anim.SetBool("IsDead", true);
+            Sound_Manager.instance.PlaySound(deathSound);
+            // Destroy(gameObject);
+            StartCoroutine(RestartLevel());
+            this.enabled = false;
+            
+        }
+
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Sound_Manager.instance.PlaySound(coinSound);
+            Destroy(other.gameObject);
+            CM.Coin_Count++;
         }
     }
 
-    void RestartLevel()
+   
+    private IEnumerator RestartLevel()
     {
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    // private void OnCollisionEnter2D(Collision2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Level"))
-    //     {
-    //         Vector3 normal = other.GetContact(0).normal;
-    //         if(normal == Vector3.up)
-    //         {
-    //             Grounded = true;
-    //         }
-    //     }
-    // }
-
-    // private void OnCollisionExit2D(Collision2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Level"))
-    //     {
-    //         Grounded = false;
-    //     }
-    // }
 }

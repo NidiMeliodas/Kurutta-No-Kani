@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6549594745357674466}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5640045817957865613}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.75, y: -9.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -180,6 +180,12 @@ MonoBehaviour:
   LevelLayer:
     serializedVersion: 2
     m_Bits: 64
+  CM: {fileID: 2910750586711035750, guid: 0642bf4faf877f849abe584c7151ce09, type: 3}
+  jumpSound: {fileID: 8300000, guid: 47b105e1151d12e478014bedf0018d79, type: 3}
+  coinSound: {fileID: 8300000, guid: 970139a8e3b30584dbb7af8f8573bd5b, type: 3}
+  deathSound: {fileID: 8300000, guid: 59fec59da76805f418b4e7789588a388, type: 3}
+  landingSound: {fileID: 8300000, guid: 1d3843943a855874c8e5f3ff5a371796, type: 3}
+  runningSound: {fileID: 8300000, guid: cf6853952f73e0e46ba3c935a994760c, type: 3}
 --- !u!95 &6549594745357674466
 Animator:
   serializedVersion: 5
