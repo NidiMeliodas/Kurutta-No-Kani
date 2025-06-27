@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Kurutta No Kani.sln"
+    "dotnet.defaultSolution": "2D-clone.sln"
 }
