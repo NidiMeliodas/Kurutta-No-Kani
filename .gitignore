@@ -1,0 +1,85 @@
+############################################
+# Unity Project Files to Ignore
+############################################
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+############################################
+# Build Cache / History Files
+############################################
+*.bhc
+BuildCache/
+Assets/BuildCache/
+
+############################################
+# IDE / Editor Settings
+############################################
+.vscode/
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+
+# JetBrains Rider plugin
+Assets/Plugins/Editor/JetBrains*
+
+############################################
+# Visual Studio / Mono / Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+############################################
+# Crash Reports & Debug Logs
+############################################
+sysinfo.txt
+crashlytics-build.properties
+
+############################################
+# Binary Builds and Packages
+############################################
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+
+############################################
+# Addressables (optional, if used)
+Assets/AddressableAssetsData/*/*.bin*
+Assets/StreamingAssets/aa.meta
+Assets/StreamingAssets/aa/*
+
+############################################
+# OS-Specific Junk
+############################################
+.DS_Store
+Thumbs.db
+
+############################################
+# Build Folders — Ignore all except WebGL
+############################################
+[Bb]uild/
+[Bb]uilds/
+# ✅ EXCEPTION: Allow "Build/" folder for WebGL hosting
+!Build/
+!Build/**
+!index.html
+!TemplateData/
+!TemplateData/**
